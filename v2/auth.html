@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Клуб привилегий | SERGEY SLOTIN — Вход и регистрация</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header inner-page-header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-main">SERGEY SLOTIN</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="catalog.html" class="nav-link">Каталог</a></li>
+          <li class="nav-item"><a href="index.html#collections" class="nav-link">Коллекции</a></li>
+          <li class="nav-item"><a href="index.html#bespoke" class="nav-link">Индивидуальный заказ</a></li>
+          <li class="nav-item"><a href="index.html#about" class="nav-link">О доме</a></li>
+          <li class="nav-item"><a href="salons.html" class="nav-link">Салоны в Кирове</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <a href="tel:+78332372556" class="mobile-phone">+7 (8332) 37-25-56</a>
+          <p class="mobile-address">г. Киров: ЦУМ • ТД Европейский • ТЦ Глобус • ТРЦ Максимум</p>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+78332372556" class="header-phone-link desktop-only">+7 (8332) 37-25-56</a>
+        
+        <button class="action-btn" id="searchBtn" aria-label="Поиск" title="Поиск по сайту">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="auth.html" class="action-btn active" aria-label="Личный кабинет и Клуб привилегий" title="Клуб привилегий и личный кабинет" style="color: var(--accent-gold-light);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+
+        <button class="action-btn" id="wishlistBtn" aria-label="Избранное">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge" id="wishlistBadge">0</span>
+        </button>
+
+        <button class="action-btn" id="cartBtn" aria-label="Корзина">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+
+        <button class="burger-menu-btn" id="burgerBtn" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= BREADCRUMBS & HERO ================= -->
+  <div class="breadcrumbs-bar">
+    <div class="breadcrumbs">
+      <a href="index.html">Главная</a>
+      <span class="sep">/</span>
+      <span>Клуб привилегий</span>
+    </div>
+  </div>
+
+  <section class="page-hero-banner">
+    <div class="page-hero-container">
+      <span class="section-eyebrow">ПРОГРАММА ЛОЯЛЬНОСТИ</span>
+      <h1 class="page-title">Клуб привилегий SERGEY SLOTIN</h1>
+      <p class="page-subtitle">Вступите в закрытый клуб ювелирного дома: получайте бонусы за каждую покупку, персональные скидки ко дню рождения и приглашения на закрытые примерки.</p>
+    </div>
+  </section>
+
+  <!-- ================= AUTH & CLUB SECTION (SOKOLOV / CARTIER PRIVÉ STYLE) ================= -->
+  <section class="auth-page-section">
+    <div class="auth-container">
+      <!-- Left Privileges Showcase Column -->
+      <div class="club-benefits-card">
+        <div>
+          <span class="club-eyebrow">PRIVILÈGE CLUB</span>
+          <h2 class="club-heading">5 000 бонусов в подарок при регистрации</h2>
+          <p class="club-subheading">1 бонус = 1 рубль. Оплачивайте бонусами до 20% стоимости любых изделий из золота и бриллиантов в салонах Кирова.</p>
+
+          <div class="club-perks-list">
+            <div class="perk-item">
+              <div class="perk-icon-badge">🎁</div>
+              <div class="perk-text">
+                <strong>5 000 приветственных рублей</strong>
+                <span>Начисляются мгновенно после подтверждения номера</span>
+              </div>
+            </div>
+
+            <div class="perk-item">
+              <div class="perk-icon-badge">🎂</div>
+              <div class="perk-text">
+                <strong>Скидка 15% ко дню рождения</strong>
+                <span>Действует за 7 дней до и 7 дней после вашего праздника</span>
+              </div>
+            </div>
+
+            <div class="perk-item">
+              <div class="perk-icon-badge">💎</div>
+              <div class="perk-text">
+                <strong>Кешбэк бонусами до 10%</strong>
+                <span>Возвращайте часть стоимости каждой покупки на карту клуба</span>
+              </div>
+            </div>
+
+            <div class="perk-item">
+              <div class="perk-icon-badge">☕</div>
+              <div class="perk-text">
+                <strong>Приватная VIP-примерка</strong>
+                <span>Бесплатное бронирование лаунж-зоны и работа с личным стилистом</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="club-tier-bar">
+          <div class="tier-item">
+            <span class="tier-name">Silver</span>
+            <span class="tier-percent">5%</span>
+          </div>
+          <div class="tier-item">
+            <span class="tier-name">Gold</span>
+            <span class="tier-percent">7%</span>
+          </div>
+          <div class="tier-item">
+            <span class="tier-name">Platinum VIP</span>
+            <span class="tier-percent">10%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Form Column / Profile State -->
+      <div class="auth-form-card">
+        <!-- Auth Forms Wrapper (when not logged in) -->
+        <div id="authFormsWrapper">
+          <div class="auth-tabs">
+            <button class="auth-tab-btn active" data-mode="login">Вход</button>
+            <button class="auth-tab-btn" data-mode="register">Регистрация (+5 000 ₽)</button>
+          </div>
+
+          <!-- Login Form -->
+          <form class="auth-form" id="loginForm">
+            <div class="auth-input-group">
+              <label for="loginPhone">Номер телефона</label>
+              <input type="tel" id="loginPhone" required placeholder="+7 (999) 000-00-00">
+            </div>
+            <div class="auth-input-group">
+              <label for="loginPassword">Пароль или код из SMS</label>
+              <input type="password" id="loginPassword" required placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn btn-auth-submit">Войти в личный кабинет</button>
+
+            <!-- Social Login -->
+            <div class="social-auth-box">
+              <p class="social-auth-title">Быстрый вход через ID</p>
+              <div class="social-btns-row">
+                <button type="button" class="btn-social-login">Яндекс ID</button>
+                <button type="button" class="btn-social-login">VK ID</button>
+                <button type="button" class="btn-social-login">Сбер ID</button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Register Form -->
+          <form class="auth-form" id="registerForm" style="display: none;">
+            <div class="auth-input-group">
+              <label for="regName">Ваше имя</label>
+              <input type="text" id="regName" required placeholder="Анна Смирнова">
+            </div>
+            <div class="auth-input-group">
+              <label for="regPhone">Номер телефона для начисления бонусов</label>
+              <input type="tel" id="regPhone" required placeholder="+7 (999) 000-00-00">
+            </div>
+            <div class="auth-input-group">
+              <label for="regBirthday">Дата рождения (для подарка)</label>
+              <input type="date" id="regBirthday">
+            </div>
+            <label class="auth-checkbox-label">
+              <input type="checkbox" required checked>
+              <span>Я согласен(на) с условиями программы привилегий и даю согласие на обработку персональных данных</span>
+            </label>
+            <button type="submit" class="btn btn-auth-submit">Получить 5 000 бонусов и зарегистрироваться</button>
+          </form>
+        </div>
+
+        <!-- Logged-in User Profile State -->
+        <div class="user-profile-view" id="userProfileView">
+          <div class="profile-header-card">
+            <h3 class="profile-name" id="profileUserName">Анна Смирнова</h3>
+            <p class="profile-user-phone" id="profileUserPhone" style="font-size: 13.5px; color: #888; margin-bottom: 6px;">+7 (912) 827-00-11</p>
+            <span class="profile-card-status">Карта: Silver Privé • 5% кешбэк</span>
+          </div>
+
+          <div class="profile-bonuses-box">
+            <div>
+              <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: #888; display: block; margin-bottom: 2px;">Доступный баланс</span>
+              <strong>5 000 ₽</strong>
+            </div>
+            <span style="font-size: 12.5px; color: #2e7d32; font-weight: 500;">Активны для покупок</span>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 10px;">
+            <a href="catalog.html" class="btn btn-primary-gold" style="text-align: center;">Оплатить бонусами в каталоге →</a>
+            <a href="salons.html" class="btn btn-outline-dark" style="text-align: center;">Записаться на примерку в салон</a>
+            <button class="btn btn-reset-filters" id="logoutBtn" style="align-self: center; margin-top: 10px;">Выйти из аккаунта</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CART DRAWER ================= -->
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Корзина покупок">
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <div class="cart-panel">
+      <div class="cart-header">
+        <div class="cart-header-title">
+          <h3>Корзина</h3>
+          <span class="cart-count-badge" id="cartDrawerCount">(0)</span>
+        </div>
+        <button class="cart-close-btn" id="cartCloseBtn" aria-label="Закрыть корзину">✕</button>
+      </div>
+
+      <div class="cart-items-wrapper" id="cartItemsList"></div>
+
+      <div class="cart-empty-state" id="cartEmptyState">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <p>Ваша корзина пока пуста</p>
+        <a href="catalog.html" class="btn btn-outline-dark cart-empty-btn">Перейти в каталог</a>
+      </div>
+
+      <div class="cart-footer" id="cartFooter">
+        <div class="cart-summary-row">
+          <span>Сумма заказа:</span>
+          <span class="cart-total-price" id="cartTotalPrice">0 ₽</span>
+        </div>
+        <p class="cart-delivery-note">Бесплатная примерка и выдача в любом салоне SERGEY SLOTIN в Кирове</p>
+        <button class="btn btn-checkout" id="checkoutBtn">
+          <span>Оформить заказ</span>
+          <span class="arrow-icon">→</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= SEARCH OVERLAY ================= -->
+  <div class="search-overlay" id="searchOverlay">
+    <button class="search-close" id="searchCloseBtn" aria-label="Закрыть поиск">✕</button>
+    <div class="search-box">
+      <input type="text" placeholder="Поиск по украшениям, камням или артикулу..." id="searchInput">
+      <button class="search-submit" aria-label="Искать">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Мобильная навигация">
+    <a href="index.html" class="mobile-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+      </svg>
+      <span>Главная</span>
+    </a>
+    <a href="catalog.html" class="mobile-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="3" y="3" width="7" height="7"></rect>
+        <rect x="14" y="3" width="7" height="7"></rect>
+        <rect x="14" y="14" width="7" height="7"></rect>
+        <rect x="3" y="14" width="7" height="7"></rect>
+      </svg>
+      <span>Каталог</span>
+    </a>
+    <button class="mobile-nav-item mobile-cart-trigger" id="mobileCartBtn">
+      <div class="mobile-cart-icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge" id="mobileCartBadge">0</span>
+      </div>
+      <span>Корзина</span>
+    </button>
+    <a href="salons.html" class="mobile-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      <span>Салоны</span>
+    </a>
+    <a href="auth.html" class="mobile-nav-item active">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+      <span>Клуб</span>
+    </a>
+  </nav>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-content">
+      <span class="toast-icon">✓</span>
+      <span class="toast-message" id="toastMessage">Уведомление</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacts">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">SERGEY SLOTIN</div>
+          <p class="footer-subtitle">Ювелирный дом с 1992 года</p>
+          <p class="footer-desc">
+            Создаём уникальные украшения из золота, платины и драгоценных камней, которые бережно хранят ваши самые ценные моменты.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="catalog.html">Каталог изделий</a></li>
+            <li><a href="index.html#collections">Коллекции</a></li>
+            <li><a href="index.html#bespoke">Индивидуальный заказ</a></li>
+            <li><a href="salons.html">Салоны в Кирове</a></li>
+            <li><a href="auth.html">Клуб привилегий</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Салоны в Кирове</h4>
+          <ul class="footer-links">
+            <li><span>ул. Воровского, 77 (ЦУМ, 1 этаж)</span></li>
+            <li><span>ул. Воровского, 43 (ТД Европейский)</span></li>
+            <li><span>ул. Воровского, 135 (ТЦ Глобус)</span></li>
+            <li><span>ул. Пролетарская, 15 (ТРЦ Максимум)</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Связь с нами</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+78332372556" class="phone-link">+7 (8332) 37-25-56</a></li>
+            <li><a href="mailto:info@sergeyslotin.ru">info@sergeyslotin.ru</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Telegram">TG</a>
+            <a href="#" class="social-icon" aria-label="VKontakte">VK</a>
+            <a href="#" class="social-icon" aria-label="WhatsApp">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 1992–2026 Ювелирный дом «SERGEY SLOTIN». Все права защищены.</p>
+        <div class="legal-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Публичная оферта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Салоны в Кирове | SERGEY SLOTIN — Ювелирный дом</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header inner-page-header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-main">SERGEY SLOTIN</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="catalog.html" class="nav-link">Каталог</a></li>
+          <li class="nav-item"><a href="index.html#collections" class="nav-link">Коллекции</a></li>
+          <li class="nav-item"><a href="index.html#bespoke" class="nav-link">Индивидуальный заказ</a></li>
+          <li class="nav-item"><a href="index.html#about" class="nav-link">О доме</a></li>
+          <li class="nav-item"><a href="salons.html" class="nav-link active">Салоны в Кирове</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <a href="tel:+78332372556" class="mobile-phone">+7 (8332) 37-25-56</a>
+          <p class="mobile-address">г. Киров: ЦУМ • ТД Европейский • ТЦ Глобус • ТРЦ Максимум</p>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+78332372556" class="header-phone-link desktop-only">+7 (8332) 37-25-56</a>
+        
+        <button class="action-btn" id="searchBtn" aria-label="Поиск" title="Поиск по сайту">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="auth.html" class="action-btn" aria-label="Личный кабинет и Клуб привилегий" title="Клуб привилегий и личный кабинет">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+
+        <button class="action-btn" id="wishlistBtn" aria-label="Избранное">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge" id="wishlistBadge">0</span>
+        </button>
+
+        <button class="action-btn" id="cartBtn" aria-label="Корзина">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+
+        <button class="burger-menu-btn" id="burgerBtn" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= BREADCRUMBS & HERO ================= -->
+  <div class="breadcrumbs-bar">
+    <div class="breadcrumbs">
+      <a href="index.html">Главная</a>
+      <span class="sep">/</span>
+      <span>Салоны в Кирове</span>
+    </div>
+  </div>
+
+  <section class="page-hero-banner">
+    <div class="page-hero-container">
+      <span class="section-eyebrow">ЮВЕЛИРНЫЕ БУТИКИ В КИРОВЕ</span>
+      <h1 class="page-title">Салоны SERGEY SLOTIN</h1>
+      <p class="page-subtitle">4 официальных салона в Кирове с уютными VIP-зонами для примерки, штатным геммологом и сервисом бесплатной ультразвуковой чистки.</p>
+    </div>
+  </section>
+
+  <!-- ================= SALONS INTERACTIVE DIRECTORY & MAP ================= -->
+  <section class="salons-page-section">
+    <div class="salons-page-container">
+      <div class="salons-page-split">
+        <!-- Salons List Column (Click to select salon on map) -->
+        <div class="salons-list-column">
+          <!-- Salon 1: TSUM -->
+          <div class="salon-directory-card active" data-id="salon-tsum">
+            <div class="salon-dir-header">
+              <h3 class="salon-dir-title">Флагманский бутик «ЦУМ»</h3>
+              <span class="salon-dir-badge badge-gold">Флагман</span>
+            </div>
+            <p class="salon-dir-address">📍 г. Киров, ул. Воровского, 77 (ЦУМ, 1 этаж)</p>
+            <p class="salon-dir-schedule">🕒 Ежедневно: 09:00 — 20:00</p>
+            <p class="salon-dir-phone">📞 <a href="tel:+78332711373">+7 (8332) 71-13-73</a></p>
+            <p class="salon-dir-features">✨ VIP-комната для примерок, геммолог, флагманские коллекции, бесплатная парковка ЦУМа</p>
+          </div>
+
+          <!-- Salon 2: Evropeyskiy -->
+          <div class="salon-directory-card" data-id="salon-evro">
+            <div class="salon-dir-header">
+              <h3 class="salon-dir-title">Салон «ТД Европейский»</h3>
+              <span class="salon-dir-badge badge-blue">Свадебный корнер</span>
+            </div>
+            <p class="salon-dir-address">📍 г. Киров, ул. Воровского, 43 (ТД «Европейский», 1 этаж)</p>
+            <p class="salon-dir-schedule">🕒 Пн–Пт: 10:00–20:00, Сб: 10:00–19:00, Вс: 10:00–18:00</p>
+            <p class="salon-dir-phone">📞 <a href="tel:+78332372091">+7 (8332) 37-20-91</a></p>
+            <p class="salon-dir-features">💍 Свадебная галерея: более 200 моделей обручальных колец, срочная гравировка</p>
+          </div>
+
+          <!-- Salon 3: Globus -->
+          <div class="salon-directory-card" data-id="salon-globus">
+            <div class="salon-dir-header">
+              <h3 class="salon-dir-title">Салон «ТЦ Глобус»</h3>
+              <span class="salon-dir-badge badge-green">Семейный бутик</span>
+            </div>
+            <p class="salon-dir-address">📍 г. Киров, ул. Воровского, 135 (ТЦ «Глобус», 2 этаж)</p>
+            <p class="salon-dir-schedule">🕒 Ежедневно: 10:00 — 21:00</p>
+            <p class="salon-dir-phone">📞 <a href="tel:+78332527094">+7 (8332) 52-70-94</a></p>
+            <p class="salon-dir-features">👨‍👩‍👧 Подарки для всей семьи, детская линия, удобная вместительная парковка</p>
+          </div>
+
+          <!-- Salon 4: Maximum -->
+          <div class="salon-directory-card" data-id="salon-maximum">
+            <div class="salon-dir-header">
+              <h3 class="salon-dir-title">Салон «ТРЦ Максимум»</h3>
+              <span class="salon-dir-badge badge-purple">Подарки и часы</span>
+            </div>
+            <p class="salon-dir-address">📍 г. Киров, ул. Пролетарская, 15 (ТРЦ «Максимум», 1 этаж)</p>
+            <p class="salon-dir-schedule">🕒 Ежедневно: 09:00 — 20:00</p>
+            <p class="salon-dir-phone">📞 <a href="tel:+78332711787">+7 (8332) 71-17-87</a></p>
+            <p class="salon-dir-features">⌚ Мужская коллекция: часы, запонки, зажимы, столовое серебро, экспресс-подгонка</p>
+          </div>
+        </div>
+
+        <!-- Interactive Map Column (Yandex Maps Embed) -->
+        <div class="salon-map-column">
+          <div class="map-wrapper">
+            <iframe id="mapIframe" src="https://yandex.ru/map-widget/v1/?ll=49.6465%2C58.5912&z=14&pt=49.6465%2C58.5912,pm2rdm" title="Яндекс Карта салонов Сергей Слотин Киров"></iframe>
+          </div>
+
+          <!-- Map Info Card -->
+          <div class="map-overlay-info">
+            <div class="map-info-text">
+              <h4 id="mapOverlayTitle">Флагманский бутик «ЦУМ»</h4>
+              <p id="mapOverlayAddress">г. Киров, ул. Воровского, 77 (ЦУМ, 1 этаж)</p>
+            </div>
+            <button class="btn btn-primary-gold" id="mapBookBtn" data-action="book-fitting" data-salon="ул. Воровского, 77 (ЦУМ)">Записаться в салон</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complimentary Boutique Services -->
+      <div style="margin-bottom: 70px;">
+        <div class="section-eyebrow">
+          <span>СЕРВИС ДЛЯ НАШИХ КЛИЕНТОВ</span>
+          <span class="eyebrow-line"></span>
+        </div>
+        <h2 class="section-heading" style="margin-bottom: 30px;">Бесплатные услуги во всех салонах</h2>
+
+        <div class="about-pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">💎</div>
+            <h3>Ультразвуковая чистка</h3>
+            <p>Верните украшениям первозданный блеск. Процедура занимает 5 минут и бесплатна для любых ювелирных изделий наших гостей.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">📐</div>
+            <h3>Точная подгонка размера</h3>
+            <p>Ювелир скорректирует размер кольца прямо при вас или в течение 24 часов с сохранением заводского клейма Пробирной палаты.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">☕</div>
+            <h3>Приватная VIP-примерка</h3>
+            <p>Забронируйте визит: персональный стилист подготовит выбранные изделия, расскажет историю камней и угостит вас кофе в лаунж-зоне.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOOKING MODAL ================= -->
+  <div class="modal" id="checkoutModal">
+    <div class="modal-backdrop" id="checkoutBackdrop"></div>
+    <div class="modal-dialog checkout-dialog">
+      <button class="modal-close" id="checkoutCloseBtn" aria-label="Закрыть">✕</button>
+      
+      <div id="checkoutFormWrapper">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalDialogTitle">Запись на примерку в салон</h3>
+          <p class="modal-subtitle" id="modalDialogSub">Персональный стилист подготовит украшения к вашему визиту</p>
+        </div>
+        <form class="checkout-form" id="checkoutForm">
+          <div class="form-group">
+            <label for="userName">Ваше имя *</label>
+            <input type="text" id="userName" required placeholder="Анна Смирнова">
+          </div>
+          <div class="form-group">
+            <label for="userPhone">Номер телефона *</label>
+            <input type="tel" id="userPhone" required placeholder="+7 (999) 000-00-00">
+          </div>
+          <div class="form-group">
+            <label for="pickupSalon">Выберите салон в Кирове *</label>
+            <select id="pickupSalon">
+              <option value="ул. Воровского, 77 (ЦУМ, 1 этаж)">Флагманский бутик — ул. Воровского, 77 (ЦУМ)</option>
+              <option value="ул. Воровского, 43 (ТД Европейский)">Салон «ТД Европейский» — ул. Воровского, 43</option>
+              <option value="ул. Воровского, 135 (ТЦ Глобус)">Салон «ТЦ Глобус» — ул. Воровского, 135</option>
+              <option value="ул. Пролетарская, 15 (ТРЦ Максимум)">Салон «ТРЦ Максимум» — ул. Пролетарская, 15</option>
+              <option value="Доставка курьером">Курьерская доставка по Кирову (бесплатно)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="userComment">Удобное время или пожелания</label>
+            <input type="text" id="userComment" placeholder="Например: завтра около 18:00, примерка обручальных колец">
+          </div>
+          <button type="submit" class="btn btn-checkout-submit" id="submitFormBtn">Подтвердить запись</button>
+        </form>
+      </div>
+
+      <div class="checkout-success" id="checkoutSuccess" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h3>Заявка успешно принята!</h3>
+        <p class="order-number">Номер бронирования: <strong id="orderIdNum">#SL-2841</strong></p>
+        <p class="order-info">Наш персональный консультант свяжется с вами в течение 10 минут для подтверждения времени визита.</p>
+        <button class="btn btn-outline-dark" id="orderDoneBtn">Отлично</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CART DRAWER ================= -->
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Корзина покупок">
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <div class="cart-panel">
+      <div class="cart-header">
+        <div class="cart-header-title">
+          <h3>Корзина</h3>
+          <span class="cart-count-badge" id="cartDrawerCount">(0)</span>
+        </div>
+        <button class="cart-close-btn" id="cartCloseBtn" aria-label="Закрыть корзину">✕</button>
+      </div>
+
+      <div class="cart-items-wrapper" id="cartItemsList"></div>
+
+      <div class="cart-empty-state" id="cartEmptyState">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <p>Ваша корзина пока пуста</p>
+        <a href="catalog.html" class="btn btn-outline-dark cart-empty-btn">Перейти в каталог</a>
+      </div>
+
+      <div class="cart-footer" id="cartFooter">
+        <div class="cart-summary-row">
+          <span>Сумма заказа:</span>
+          <span class="cart-total-price" id="cartTotalPrice">0 ₽</span>
+        </div>
+        <p class="cart-delivery-note">Бесплатная примерка и выдача в любом салоне SERGEY SLOTIN в Кирове</p>
+        <button class="btn btn-checkout" id="checkoutBtn">
+          <span>Оформить заказ</span>
+          <span class="arrow-icon">→</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= SEARCH OVERLAY ================= -->
+  <div class="search-overlay" id="searchOverlay">
+    <button class="search-close" id="searchCloseBtn" aria-label="Закрыть поиск">✕</button>
+    <div class="search-box">
+      <input type="text" placeholder="Поиск по украшениям, камням или артикулу..." id="searchInput">
+      <button class="search-submit" aria-label="Искать">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Мобильная навигация">
+    <a href="index.html" class="mobile-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+      </svg>
+      <span>Главная</span>
+    </a>
+    <a href="catalog.html" class="mobile-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="3" y="3" width="7" height="7"></rect>
+        <rect x="14" y="3" width="7" height="7"></rect>
+        <rect x="14" y="14" width="7" height="7"></rect>
+        <rect x="3" y="14" width="7" height="7"></rect>
+      </svg>
+      <span>Каталог</span>
+    </a>
+    <button class="mobile-nav-item mobile-cart-trigger" id="mobileCartBtn">
+      <div class="mobile-cart-icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge" id="mobileCartBadge">0</span>
+      </div>
+      <span>Корзина</span>
+    </button>
+    <a href="salons.html" class="mobile-nav-item active">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      <span>Салоны</span>
+    </a>
+    <a href="auth.html" class="mobile-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+      <span>Клуб</span>
+    </a>
+  </nav>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-content">
+      <span class="toast-icon">✓</span>
+      <span class="toast-message" id="toastMessage">Товар добавлен в корзину</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacts">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">SERGEY SLOTIN</div>
+          <p class="footer-subtitle">Ювелирный дом с 1992 года</p>
+          <p class="footer-desc">
+            Создаём уникальные украшения из золота, платины и драгоценных камней, которые бережно хранят ваши самые ценные моменты.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="catalog.html">Каталог изделий</a></li>
+            <li><a href="index.html#collections">Коллекции</a></li>
+            <li><a href="index.html#bespoke">Индивидуальный заказ</a></li>
+            <li><a href="salons.html">Салоны в Кирове</a></li>
+            <li><a href="auth.html">Клуб привилегий</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Салоны в Кирове</h4>
+          <ul class="footer-links">
+            <li><span>ул. Воровского, 77 (ЦУМ, 1 этаж)</span></li>
+            <li><span>ул. Воровского, 43 (ТД Европейский)</span></li>
+            <li><span>ул. Воровского, 135 (ТЦ Глобус)</span></li>
+            <li><span>ул. Пролетарская, 15 (ТРЦ Максимум)</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Связь с нами</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+78332372556" class="phone-link">+7 (8332) 37-25-56</a></li>
+            <li><a href="mailto:info@sergeyslotin.ru">info@sergeyslotin.ru</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Telegram">TG</a>
+            <a href="#" class="social-icon" aria-label="VKontakte">VK</a>
+            <a href="#" class="social-icon" aria-label="WhatsApp">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 1992–2026 Ювелирный дом «SERGEY SLOTIN». Все права защищены.</p>
+        <div class="legal-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Публичная оферта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

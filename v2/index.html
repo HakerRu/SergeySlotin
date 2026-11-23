@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>SERGEY SLOTIN — Ювелирный дом | Официальный сайт в Кирове</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-main">SERGEY SLOTIN</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="catalog.html" class="nav-link">Каталог</a></li>
+          <li class="nav-item"><a href="#collections" class="nav-link">Коллекции</a></li>
+          <li class="nav-item"><a href="#bespoke" class="nav-link">Индивидуальный заказ</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">О доме</a></li>
+          <li class="nav-item"><a href="salons.html" class="nav-link">Салоны в Кирове</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <a href="tel:+78332372556" class="mobile-phone">+7 (8332) 37-25-56</a>
+          <p class="mobile-address">г. Киров: ЦУМ • ТД Европейский • ТЦ Глобус • ТРЦ Максимум</p>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+78332372556" class="header-phone-link desktop-only">+7 (8332) 37-25-56</a>
+        
+        <button class="action-btn" id="searchBtn" aria-label="Поиск" title="Поиск по сайту">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="auth.html" class="action-btn" aria-label="Личный кабинет и Клуб привилегий" title="Клуб привилегий и личный кабинет">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+
+        <button class="action-btn" id="wishlistBtn" aria-label="Избранное">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge" id="wishlistBadge">0</span>
+        </button>
+
+        <button class="action-btn" id="cartBtn" aria-label="Корзина">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+
+        <button class="burger-menu-btn" id="burgerBtn" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span>ЮВЕЛИРНЫЙ ДОМ С 1992 ГОДА</span>
+          <span class="eyebrow-line"></span>
+        </div>
+
+        <h1 class="hero-title">
+          <span>SERGEY</span>
+          <span>SLOTIN</span>
+        </h1>
+
+        <p class="hero-tagline">ИСКУССТВО БЫТЬ СОБОЙ</p>
+
+        <p class="hero-description">
+          Авторские ювелирные изделия из золота, платины и сертифицированных бриллиантов. 30 лет безупречного вкуса и фамильных традиций в Кирове.
+        </p>
+
+        <div class="hero-actions">
+          <a href="catalog.html" class="btn btn-primary-gold">
+            <span>Смотреть каталог</span>
+            <span class="arrow-icon">→</span>
+          </a>
+          <button class="btn btn-outline-white" data-action="book-fitting">
+            <span>Записаться на примерку</span>
+          </button>
+        </div>
+
+        <!-- Key Metrics Strip -->
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-num">30+</span>
+            <span class="metric-label">лет истории</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-num">100%</span>
+            <span class="metric-label">природные камни</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-num">4</span>
+            <span class="metric-label">салона в Кирове</span>
+          </div>
+        </div>
+
+        <!-- 3-Second Slider Controls -->
+        <div class="hero-slider-nav">
+          <div class="slider-counter">
+            <span class="current-slide" id="currentSlideNum">01</span>
+            <span class="divider">/</span>
+            <span class="total-slides">04</span>
+          </div>
+          <div class="slider-progress-line">
+            <div class="progress-bar" id="sliderProgressBar"></div>
+          </div>
+          <div class="slider-arrows">
+            <button class="slider-arrow" id="prevSlideBtn" aria-label="Предыдущий слайд">←</button>
+            <button class="slider-arrow" id="nextSlideBtn" aria-label="Следующий слайд">→</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Column -->
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="images/hero_model.jpg" alt="Ювелирные украшения Sergey Slotin" class="hero-image" id="heroImage">
+          <div class="hero-image-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COLLECTIONS LOOKBOOK ================= -->
+  <section class="collections-section" id="collections">
+    <div class="collections-grid">
+      <!-- Card 1 -->
+      <article class="collection-card">
+        <div class="card-image-box">
+          <img src="images/collection_necklace.jpg" alt="Коллекция «Этерналь»" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-info">
+          <div>
+            <span class="card-tag">Бриллиантовая линия</span>
+            <h3 class="card-title">КОЛЛЕКЦИЯ «ЭТЕРНАЛЬ»</h3>
+          </div>
+          <span class="card-arrow">→</span>
+        </div>
+        <a href="catalog.html?cat=Подвески" class="card-full-link" aria-label="Перейти в коллекцию Этерналь"></a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="collection-card">
+        <div class="card-image-box">
+          <img src="images/collection_gold_ring.jpg" alt="Коллекция «Гармония»" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-info">
+          <div>
+            <span class="card-tag">Авторское золото</span>
+            <h3 class="card-title">КОЛЛЕКЦИЯ «ГАРМОНИЯ»</h3>
+          </div>
+          <span class="card-arrow">→</span>
+        </div>
+        <a href="catalog.html?cat=Кольца" class="card-full-link" aria-label="Перейти в коллекцию Гармония"></a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="collection-card">
+        <div class="card-image-box">
+          <img src="images/collection_earrings.jpg" alt="Коллекция «Вдохновение»" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-info">
+          <div>
+            <span class="card-tag">Вечерние серьги</span>
+            <h3 class="card-title">КОЛЛЕКЦИЯ «ВДОХНОВЕНИЕ»</h3>
+          </div>
+          <span class="card-arrow">→</span>
+        </div>
+        <a href="catalog.html?cat=Серьги" class="card-full-link" aria-label="Перейти в коллекцию Вдохновение"></a>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="collection-card">
+        <div class="card-image-box">
+          <img src="images/collection_mens.jpg" alt="Подарки для мужчин" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-info">
+          <div>
+            <span class="card-tag">Часы и запонки</span>
+            <h3 class="card-title">ПОДАРКИ ДЛЯ МУЖЧИН</h3>
+          </div>
+          <span class="card-arrow">→</span>
+        </div>
+        <a href="catalog.html" class="card-full-link" aria-label="Перейти в раздел подарков для мужчин"></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= MAIN SHOWCASE TABS (НОВЫЕ, ПОПУЛЯРНЫЕ, СПЕЦПРЕДЛОЖЕНИЯ) ================= -->
+  <section class="showcase-section" id="showcase">
+    <div class="showcase-container">
+      <div class="showcase-header">
+        <div class="section-eyebrow">
+          <span>ИЗБРАННАЯ КОЛЛЕКЦИЯ</span>
+          <span class="eyebrow-line"></span>
+        </div>
+        <div class="showcase-title-row">
+          <div>
+            <h2 class="section-heading">Ювелирные шедевры дома</h2>
+            <p class="catalog-subtitle">Украшения в наличии в салонах Кирова с возможностью бесплатной примерки</p>
+          </div>
+
+          <!-- Showcase Tabs: Новые, Популярные, Спецпредложения -->
+          <div class="showcase-tabs-bar">
+            <button class="showcase-tab active" data-tab="new">Новые поступления</button>
+            <button class="showcase-tab" data-tab="popular">Популярное</button>
+            <button class="showcase-tab" data-tab="special">Спецпредложения %</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Showcase Products Grid -->
+      <div class="products-grid" id="showcaseGrid">
+        <!-- Rendered by js/main.js -->
+      </div>
+
+      <div class="showcase-footer-row">
+        <a href="catalog.html" class="btn btn-outline-dark">
+          <span>Смотреть весь каталог (120+ изделий)</span>
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BESPOKE / ATELIER SECTION ================= -->
+  <section class="bespoke-section" id="bespoke">
+    <div class="bespoke-container">
+      <div class="bespoke-visual">
+        <div class="bespoke-image-box">
+          <img src="images/about_ring.jpg" alt="Индивидуальный ювелирный заказ" loading="lazy">
+          <div class="bespoke-badge-overlay">
+            <span class="badge-title">Atelier SERGEY SLOTIN</span>
+            <span class="badge-sub">Индивидуальное изготовление</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bespoke-content">
+        <div class="section-eyebrow">
+          <span>ЮВЕЛИРНОЕ АТЕЛЬЕ</span>
+          <span class="eyebrow-line"></span>
+        </div>
+
+        <h2 class="section-heading">
+          Создаём украшения<br>
+          вашей мечты
+        </h2>
+
+        <p class="section-description">
+          Если вы мечтаете о кольце, колье или серьгах уникального дизайна — мастера нашего ателье воплотят замысел: от первого карандашного эскиза до посадки редчайших камней.
+        </p>
+
+        <!-- Process Steps -->
+        <div class="bespoke-steps">
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <div class="step-body">
+              <h4>Эскиз и 3D-моделирование</h4>
+              <p>Создаём подробную 3D-визуализацию. Вы увидите идеальные пропорции и посадку камней до начала работы в металле.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <div class="step-body">
+              <h4>Подбор сертифицированных камней</h4>
+              <p>Прямой поиск бриллиантов, сапфиров, изумрудов и рубинов с международными паспортами GIA и сертификатами МГУ.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <div class="step-body">
+              <h4>Ручная работа и клеймение</h4>
+              <p>Филигранная ручная закрепка, официальное клеймо Пробирной палаты РФ и пожизненная гарантия на изделие.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bespoke-action">
+          <button class="btn btn-outline-dark" id="bespokeConsultBtn">
+            <span>Заказать индивидуальный дизайн</span>
+            <span class="arrow-icon">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT / HERITAGE ================= -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-header-centered">
+        <div class="section-eyebrow justify-center">
+          <span>О ЮВЕЛИРНОМ ДОМЕ</span>
+          <span class="eyebrow-line"></span>
+        </div>
+        <h2 class="section-heading">Более 30 лет создаём украшения,<br>которые передают из поколения в поколение</h2>
+        <p class="about-lead">
+          SERGEY SLOTIN — фамильный ювелирный дом, основанный в 1992 году. Мы объединяем старинные традиции вятских ювелиров с актуальным европейским дизайном.
+        </p>
+      </div>
+
+      <div class="about-pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M6 3h12l4 7-10 11L2 10l4-7z"/>
+              <path d="M2 10h20"/>
+              <path d="M12 21L7.5 10 10 3"/>
+              <path d="M12 21l4.5-11L14 3"/>
+            </svg>
+          </div>
+          <h3>Безупречная экспертиза</h3>
+          <p>Каждый драгоценный камень проходит строгий геммологический контроль параметров цвета, чистоты и симметрии огранки.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M12 2v20M2 12h20"/>
+              <path d="M5.5 5.5l13 13M18.5 5.5l-13 13"/>
+              <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Авторский почерк</h3>
+          <p>Лимитированные коллекции, создаваемые ограниченными тиражами без массовой штамповки. Каждое изделие обладает характером.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M3 6l3.5 9h11L21 6l-4.5 5-4.5-7-4.5 7L3 6z"/>
+              <line x1="6" y1="18" x2="18" y2="18"/>
+            </svg>
+          </div>
+          <h3>Фамильное доверие</h3>
+          <p>С 1992 года тысячи семей доверяют нам выбор главных символов любви — от помолвочных колец до памятных семейных реликвий.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SALONS PREVIEW (4 SALONS IN KIROV) ================= -->
+  <section class="salons-page-section" id="salons-preview">
+    <div class="salons-page-container">
+      <div class="salons-header">
+        <div class="section-eyebrow">
+          <span>САЛОНЫ В КИРОВЕ</span>
+          <span class="eyebrow-line"></span>
+        </div>
+        <div class="salons-title-row">
+          <div>
+            <h2 class="section-heading">4 салона в Кирове рядом с вами</h2>
+            <p class="salons-subtitle">Выберите ближайший салон для примерки или закажите бесплатную курьерскую доставку</p>
+          </div>
+          <a href="salons.html" class="btn btn-outline-dark">
+            <span>Все адреса и карта</span>
+            <span class="arrow-icon">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4 Salon Preview Grid (Responsive 4 -> 2 -> 1) -->
+      <div class="salon-cards-grid">
+        <div class="salon-card-box featured">
+          <div class="salon-card-badge">ЦУМ (1 этаж)</div>
+          <h3 class="salon-card-name">Флагманский бутик</h3>
+          <p class="salon-info-row">📍 ул. Воровского, 77</p>
+          <p class="salon-info-row">🕒 09:00 — 20:00</p>
+          <p class="salon-info-row">📞 +7 (8332) 71-13-73</p>
+          <button class="btn-salon-select" data-action="book-fitting" data-salon="ул. Воровского, 77 (ЦУМ)">Записаться на примерку</button>
+        </div>
+
+        <div class="salon-card-box">
+          <div class="salon-card-badge">ТД Европейский</div>
+          <h3 class="salon-card-name">Свадебный салон</h3>
+          <p class="salon-info-row">📍 ул. Воровского, 43</p>
+          <p class="salon-info-row">🕒 10:00 — 20:00</p>
+          <p class="salon-info-row">📞 +7 (8332) 37-20-91</p>
+          <button class="btn-salon-select" data-action="book-fitting" data-salon="ул. Воровского, 43 (ТД Европейский)">Записаться на примерку</button>
+        </div>
+
+        <div class="salon-card-box">
+          <div class="salon-card-badge">ТЦ Глобус</div>
+          <h3 class="salon-card-name">Семейный бутик</h3>
+          <p class="salon-info-row">📍 ул. Воровского, 135</p>
+          <p class="salon-info-row">🕒 10:00 — 21:00</p>
+          <p class="salon-info-row">📞 +7 (8332) 52-70-94</p>
+          <button class="btn-salon-select" data-action="book-fitting" data-salon="ул. Воровского, 135 (ТЦ Глобус)">Записаться на примерку</button>
+        </div>
+
+        <div class="salon-card-box">
+          <div class="salon-card-badge">ТРЦ Максимум</div>
+          <h3 class="salon-card-name">Подарки и часы</h3>
+          <p class="salon-info-row">📍 ул. Пролетарская, 15</p>
+          <p class="salon-info-row">🕒 09:00 — 20:00</p>
+          <p class="salon-info-row">📞 +7 (8332) 71-17-87</p>
+          <button class="btn-salon-select" data-action="book-fitting" data-salon="ул. Пролетарская, 15 (ТРЦ Максимум)">Записаться на примерку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOYALTY CLUB CALLOUT BANNER ================= -->
+  <section class="club-callout-section">
+    <div class="club-callout-container">
+      <div class="club-callout-text">
+        <span class="club-callout-eyebrow">КЛУБ ПРИВИЛЕГИЙ SERGEY SLOTIN</span>
+        <h3 class="club-callout-title">Получите 5 000 приветственных бонусов</h3>
+        <p class="club-callout-desc">Зарегистрируйтесь в программе лояльности, оплачивайте бонусами до 20% стоимости украшений и получайте персональные подарки ко дню рождения.</p>
+      </div>
+      <div class="club-callout-cta">
+        <a href="auth.html" class="btn btn-primary-gold">
+          <span>Вступить в клуб привилегий</span>
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contacts">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">SERGEY SLOTIN</div>
+          <p class="footer-subtitle">Ювелирный дом с 1992 года</p>
+          <p class="footer-desc">
+            Создаём уникальные украшения из золота, платины и драгоценных камней, которые бережно хранят ваши самые ценные моменты.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="catalog.html">Каталог изделий</a></li>
+            <li><a href="index.html#collections">Коллекции</a></li>
+            <li><a href="index.html#bespoke">Индивидуальный заказ</a></li>
+            <li><a href="salons.html">Салоны в Кирове</a></li>
+            <li><a href="auth.html">Клуб привилегий</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Салоны в Кирове</h4>
+          <ul class="footer-links">
+            <li><span>ул. Воровского, 77 (ЦУМ, 1 этаж)</span></li>
+            <li><span>ул. Воровского, 43 (ТД Европейский)</span></li>
+            <li><span>ул. Воровского, 135 (ТЦ Глобус)</span></li>
+            <li><span>ул. Пролетарская, 15 (ТРЦ Максимум)</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Связь с нами</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+78332372556" class="phone-link">+7 (8332) 37-25-56</a></li>
+            <li><a href="mailto:info@sergeyslotin.ru">info@sergeyslotin.ru</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Telegram">TG</a>
+            <a href="#" class="social-icon" aria-label="VKontakte">VK</a>
+            <a href="#" class="social-icon" aria-label="WhatsApp">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 1992–2026 Ювелирный дом «SERGEY SLOTIN». Все права защищены.</p>
+        <div class="legal-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Публичная оферта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= QUICK VIEW MODAL ================= -->
+  <div class="modal" id="quickViewModal">
+    <div class="modal-backdrop" onclick="document.getElementById('quickViewModal').classList.remove('active'); document.body.style.overflow=''"></div>
+    <div class="modal-dialog quick-view-dialog">
+      <button class="modal-close" id="quickViewCloseBtn" aria-label="Закрыть">✕</button>
+      <div class="quick-view-grid">
+        <div class="quick-view-image">
+          <img id="qvImage" src="" alt="Изделие">
+        </div>
+        <div class="quick-view-body">
+          <span class="quick-view-category" id="qvCategory">Кольцо</span>
+          <h3 class="quick-view-title" id="qvTitle">Название изделия</h3>
+          <div class="quick-view-price-row">
+            <span class="quick-view-price" id="qvPrice">0 ₽</span>
+            <span class="product-old-price" id="qvOldPrice"></span>
+          </div>
+          <p class="quick-view-desc" id="qvDesc">Описание изделия</p>
+
+          <table class="quick-view-specs-table">
+            <tr><td>Металл:</td><td id="qvMetal">Золото 585</td></tr>
+            <tr><td>Вставка:</td><td id="qvInsert">Бриллиант</td></tr>
+            <tr><td>Средний вес:</td><td id="qvWeight">2.5 г</td></tr>
+          </table>
+
+          <div class="ring-size-selector" id="qvSizeBox">
+            <div class="size-label-row">
+              <span>Выберите размер:</span>
+              <a href="catalog.html#size-guide" class="size-guide-btn">Гид по размерам</a>
+            </div>
+            <div class="size-options-pills" id="qvSizesContainer">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <div class="quick-view-actions">
+            <button class="btn btn-primary-gold" id="qvAddToCartBtn">В корзину</button>
+            <button class="btn btn-outline-dark" data-action="book-fitting">Примерить в салоне</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CART SLIDE-OUT DRAWER ================= -->
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Корзина покупок">
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <div class="cart-panel">
+      <div class="cart-header">
+        <div class="cart-header-title">
+          <h3>Корзина</h3>
+          <span class="cart-count-badge" id="cartDrawerCount">(0)</span>
+        </div>
+        <button class="cart-close-btn" id="cartCloseBtn" aria-label="Закрыть корзину">✕</button>
+      </div>
+
+      <div class="cart-items-wrapper" id="cartItemsList"></div>
+
+      <div class="cart-empty-state" id="cartEmptyState">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <p>Ваша корзина пока пуста</p>
+        <a href="catalog.html" class="btn btn-outline-dark cart-empty-btn" id="cartEmptyGoBtn">Перейти в каталог</a>
+      </div>
+
+      <div class="cart-footer" id="cartFooter">
+        <div class="cart-summary-row">
+          <span>Сумма заказа:</span>
+          <span class="cart-total-price" id="cartTotalPrice">0 ₽</span>
+        </div>
+        <p class="cart-delivery-note">Бесплатная примерка и выдача в любом салоне SERGEY SLOTIN в Кирове</p>
+        <button class="btn btn-checkout" id="checkoutBtn">
+          <span>Оформить заказ</span>
+          <span class="arrow-icon">→</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= BOOKING & CHECKOUT MODAL ================= -->
+  <div class="modal" id="checkoutModal">
+    <div class="modal-backdrop" id="checkoutBackdrop"></div>
+    <div class="modal-dialog checkout-dialog">
+      <button class="modal-close" id="checkoutCloseBtn" aria-label="Закрыть">✕</button>
+      
+      <div id="checkoutFormWrapper">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalDialogTitle">Запись на примерку в салон</h3>
+          <p class="modal-subtitle" id="modalDialogSub">Персональный стилист подготовит украшения к вашему визиту</p>
+        </div>
+        <form class="checkout-form" id="checkoutForm">
+          <div class="form-group">
+            <label for="userName">Ваше имя *</label>
+            <input type="text" id="userName" required placeholder="Анна Смирнова">
+          </div>
+          <div class="form-group">
+            <label for="userPhone">Номер телефона *</label>
+            <input type="tel" id="userPhone" required placeholder="+7 (999) 000-00-00">
+          </div>
+          <div class="form-group">
+            <label for="pickupSalon">Выберите салон в Кирове *</label>
+            <select id="pickupSalon">
+              <option value="ул. Воровского, 77 (ЦУМ, 1 этаж)">Флагманский бутик — ул. Воровского, 77 (ЦУМ)</option>
+              <option value="ул. Воровского, 43 (ТД Европейский)">Салон «ТД Европейский» — ул. Воровского, 43</option>
+              <option value="ул. Воровского, 135 (ТЦ Глобус)">Салон «ТЦ Глобус» — ул. Воровского, 135</option>
+              <option value="ул. Пролетарская, 15 (ТРЦ Максимум)">Салон «ТРЦ Максимум» — ул. Пролетарская, 15</option>
+              <option value="Доставка курьером">Курьерская доставка по Кирову (бесплатно)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="userComment">Удобный день или комментарий</label>
+            <input type="text" id="userComment" placeholder="Например: суббота после 14:00, интересует размер 17.0">
+          </div>
+          <div class="checkout-summary-box" id="checkoutSummaryBox">
+            <div class="summary-line">
+              <span>Сумма к оплате при получении:</span>
+              <strong id="checkoutFinalAmount">0 ₽</strong>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-checkout-submit" id="submitFormBtn">Подтвердить запись</button>
+        </form>
+      </div>
+
+      <div class="checkout-success" id="checkoutSuccess" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h3>Заявка успешно принята!</h3>
+        <p class="order-number">Номер бронирования: <strong id="orderIdNum">#SL-2841</strong></p>
+        <p class="order-info">Наш персональный консультант свяжется с вами в течение 10 минут для согласования всех деталей.</p>
+        <button class="btn btn-outline-dark" id="orderDoneBtn">Отлично</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SEARCH OVERLAY ================= -->
+  <div class="search-overlay" id="searchOverlay">
+    <button class="search-close" id="searchCloseBtn" aria-label="Закрыть поиск">✕</button>
+    <div class="search-box">
+      <input type="text" placeholder="Поиск по украшениям, камням или артикулу..." id="searchInput">
+      <button class="search-submit" aria-label="Искать">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= MOBILE BOTTOM NAVIGATION ================= -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Мобильная навигация">
+    <a href="index.html" class="mobile-nav-item active">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+      </svg>
+      <span>Главная</span>
+    </a>
+    <a href="catalog.html" class="mobile-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="3" y="3" width="7" height="7"></rect>
+        <rect x="14" y="3" width="7" height="7"></rect>
+        <rect x="14" y="14" width="7" height="7"></rect>
+        <rect x="3" y="14" width="7" height="7"></rect>
+      </svg>
+      <span>Каталог</span>
+    </a>
+    <button class="mobile-nav-item mobile-cart-trigger" id="mobileCartBtn">
+      <div class="mobile-cart-icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge" id="mobileCartBadge">0</span>
+      </div>
+      <span>Корзина</span>
+    </button>
+    <a href="salons.html" class="mobile-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      <span>Салоны</span>
+    </a>
+    <a href="auth.html" class="mobile-nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+      <span>Клуб</span>
+    </a>
+  </nav>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-content">
+      <span class="toast-icon">✓</span>
+      <span class="toast-message" id="toastMessage">Товар добавлен в корзину</span>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
